@@ -1,0 +1,46 @@
+{
+  "autores": [
+    { "idAutor": 1, "nombre": "Mario Mendoza", "nacionalidad": "Colombiano" },
+    { "idAutor": 2, "nombre": "Stefan Zweig", "nacionalidad": "Austriaco" },
+    { "idAutor": 3, "nombre": "Molière", "nacionalidad": "Francés" },
+    { "idAutor": 4, "nombre": "Rachelle S. Heller", "nacionalidad": "Desconocida" },
+    { "idAutor": 5, "nombre": "José Dimas Luján Castillo", "nacionalidad": "Colombiano" },
+    { "idAutor": 6, "nombre": "Sigmund Freud", "nacionalidad": "Austriaco" },
+    { "idAutor": 7, "nombre": "Federico García Lorca", "nacionalidad": "Español" },
+    { "idAutor": 8, "nombre": "Stephen King", "nacionalidad": "Estadounidense" },
+    { "idAutor": 9, "nombre": "Dante Alighieri", "nacionalidad": "Italiano" },
+    { "idAutor": 10, "nombre": "Héctor Alfonso Ruiz", "nacionalidad": "Colombiano" },
+    { "idAutor": 11, "nombre": "Plutarco Elías Gil R.", "nacionalidad": "Colombiano" }
+  ],
+  "libros": [
+    { "idLibro": 1, "isbn": "9789584239419", "codigo_barras": "002", "idCategoria": 2, "idAutor": 1, "titulo": "Satanás", "editorial": "Editorial Planeta", "fechaPublicacion": 2002, "ejemplares": 3, "descripcion": "La vida de tres personajes...", "serie": "Autores españoles e iberoamericanos", "tema": "Novela colombiana -- Siglo XXI, Bien y mal – Novela", "notaPremio": "Premio Biblioteca Breve, 2022" },
+    { "idLibro": 2, "isbn": "9789585595026", "codigo_barras": "003", "idCategoria": 2, "idAutor": 2, "titulo": "Novela de ajedrez", "editorial": "Instituto Distrital de las Artes", "fechaPublicacion": 2019, "ejemplares": 4, "descripcion": "Durante un viaje en barco...", "serie": "Libro al viento universal; 144", "tema": "Novela austriaca -- Siglo XX", "notaPremio": null },
+    {"id": 10,"isbn": "9586312135","codigo_barras": "9789586312134","categoria": "Matemáticas","autor": "Héctor Alfonso Ruiz, Plutarco Elías Gil R.","editorial": "Universidad Santo Tomás","fechaPublicacion": 1989,"ejemplares": 5,"titulo": "Matemáticas básicas","descripcion": "Incluye conceptos fundamentales y básicos de matemáticas, con ilustraciones que facilitan el entendimiento. El libro está dirigido a estudiantes de bibliotecas públicas y otras instituciones educativas.","serie": "Ediciones Usta - Lista Básica-Bibliotecas Públicas 1","tema": "Matemáticas básicas, Bibliografía matemática", "notaPremio": null,"cover": "book10"}
+      
+  ],
+  "prestamos": [
+    { "idPrestamo": 1, "fechaPrestamo": "2024-07-01 10:00:00", "idUsuario": 1 },
+    { "idPrestamo": 2, "fechaPrestamo": "2024-08-01 11:00:00", "idUsuario": 2 },
+    { "idPrestamo": 3, "fechaPrestamo": "2024-09-01 12:00:00", "idUsuario": 3 }
+  ],
+  "detalleprestamo": [
+    { "idDetallePrestamo": 1, "idPrestamo": 1, "idLibro": 1, "cantidad": 1, "fechaDevolucion": "2024-07-15 10:00:00" },
+    { "idDetallePrestamo": 2, "idPrestamo": 2, "idLibro": 2, "cantidad": 1, "fechaDevolucion": null },
+    { "idDetallePrestamo": 3, "idPrestamo": 3, "idLibro": 3, "cantidad": 2, "fechaDevolucion": null }
+  ],
+  "notificaciones": [
+    { "idNotificacion": 1, "idUsuario": 1, "mensaje": "Tu libro \"Novela de ajedrez\" está reservado.", "fecha": "2024-09-17T00:00:00Z", "leida": false },
+    { "idNotificacion": 2, "idUsuario": 2, "mensaje": "Tu libro \"Bodas de sangre\" está disponible para recoger.", "fecha": "2024-09-17T00:00:00Z", "leida": true },
+    { "idNotificacion": 3, "idUsuario": 3, "mensaje": "Tu libro \"La divina comedia\" está listo para el préstamo.", "fecha": "2024-09-17T00:00:00Z", "leida": false }
+  ],
+  "usuarios": [
+    { "idUsuario": 1,"codigo_barras":"1030544214", "nombre": "Laura Valentina Lozano Perez", "documento": "1030544214", "correo soysena": "lvlozano41@soy.sena.edu.co", "telefono": "3229039803", "direccion": "Tv70 #59 c25 sur", "programa": "Tecnólogo", "rol": "Aprendiz"},
+    { "idUsuario": 1, "codigo_barras":"1080931273 ","nombre": "Kevin Santiago Vargas Calderón", "documento": "1080931273", "correo soysena": "kevins_vargas3@soy.sena.edu.co", "telefono": "3102844311", "direccion": "Tv70 #59 c25 sur", "programa": "Tecnólogo", "rol": "Aprendiz"}
+   
+  ],
+  "devoluciones": [
+    { "idDevolucion": 1, "idPrestamo": 1, "fechaDevolucion": "2024-07-15 10:00:00" },
+    { "idDevolucion": 2, "idPrestamo": 2, "fechaDevolucion": null },
+    { "idDevolucion": 3, "idPrestamo": 3, "fechaDevolucion": null }
+  ]
+}
